@@ -9,5 +9,5 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 @CrossOrigin(origins = "http://localhost:4200")
 public
 interface ListItemRepository extends JpaRepository<ListItem, Long> {
-    ListItem findByListItemID(Long listItemID);
+    ListItem findByListItemId(Long listItemId);
 }

@@ -9,5 +9,5 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 @CrossOrigin(origins = "http://localhost:4200")
 public
 interface CustomerRepository extends JpaRepository<Customer, Long> {
-    Customer findByCustomerID(Long customerID);
+    Customer findByCustomerId(Long customerId);
 }
