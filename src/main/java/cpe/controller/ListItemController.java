@@ -20,6 +20,7 @@ import java.util.stream.Collectors;
 
 @RestController
 class ListItemController {
+    @Autowired
     private ListItemRepository listItemRepository;
 
     public ListItemController(ListItemRepository listItemRepository) {
@@ -33,10 +34,10 @@ class ListItemController {
         .collect(Collectors.toList());
     }
 
-    @GetMapping("/ListItem-list/{id}")
+  /*  @GetMapping("/ListItem-list/{id}")
     @CrossOrigin(origins = "http://localhost:4200")
     public ListItem  listItemList(@PathVariable("id") Long id) {
-        return listItemRepository.findByListItemID(id);
-    }
+        return listItemRepository.findByListItemId(id);
+    }*/
 
 }

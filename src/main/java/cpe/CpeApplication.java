@@ -16,17 +16,5 @@ public class CpeApplication {
         SpringApplication.run(CpeApplication.class, args);
     }
 
-   /*ean
-    ApplicationRunner init(CustomerRepository customerRepository)
-        {
-            return args -> {
-                Customer customer1 = new Customer();
-                Customer1.setCustomerName("Wirayut Khotsuk");
-                customerRepository.save(customer1);
-
-                Customer customer2 = new Customer();
-                Customer1.setCustomerName("Bancha Nonpala");
-                customerRepository.save(customer2);
-            };
-        }*/
+  
 }
